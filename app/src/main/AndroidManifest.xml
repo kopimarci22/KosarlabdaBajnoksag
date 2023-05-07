@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KosarlabdaBajnoksag"
         tools:targetApi="31">
+
+        <activity android:name=".activities.regLog.Login"/>
+        <activity android:name=".activities.regLog.Registracio"/>
+        <activity android:name=".activities.Bajnoksag"/>
+        <activity android:name=".activities.Profil"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

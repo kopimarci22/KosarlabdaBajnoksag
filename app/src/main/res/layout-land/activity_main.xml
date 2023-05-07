@@ -8,13 +8,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Üdvözöllek a kosárlabda bajnokság Home oldalán"
-        tools:ignore="MissingConstraints"
-        android:layout_marginTop="100dp"/>
+        android:text="Üdvözöllek a kosárlabda bajnokság oldalán"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -26,28 +28,29 @@
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="goToPage"
             android:text="Login" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="goToRegist"
+            android:onClick="goToPage"
             android:text="Registracio" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="goToProfil"
-            android:text="Profil" />
+            android:onClick="goToPage"
+            android:text="Home" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="goTobajnoksag"
-            android:text="Bajnoksag" />
+            android:onClick="goToPage"
+            android:text="Eredmeny" />
 
 
     </LinearLayout>
